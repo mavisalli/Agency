@@ -8,6 +8,9 @@ const router = express.Router();
 //Page routes
 router.route('/').get(pageController.getIndexPage);
 router.route('/').post(projectController.createProject);
+router.route('/:id').put(projectController.updateProject);
+router.route('/:id').delete(projectController.deleteProject);
+
 
 
 
